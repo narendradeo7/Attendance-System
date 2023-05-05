@@ -1,0 +1,59 @@
+<!-- including header using ejs  -->
+
+
+<%- include("partials/header"); -%>
+
+<!-- including navbar using ejs  -->
+
+<%- include("partials/nav"); -%>
+
+<style>
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #reader {
+        width: 600px;
+    }
+
+    #result {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #html5-qrcode video {
+  transform: scaleX(-1);
+}
+
+</style>
+
+<main>
+    <div id="reader"></div>
+    <div id="result"></div>
+</main>
+
+
+
+<!-- result of the scanning to show  -->
+
+<h2 class="scanresult"> </h2>
+<!-- beep sound  -->
+<audio src="../../public/music/beep.mp3"></audio>
+
+
+
+
+
+
+<!-- script for scanner  -->
+
+<script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+<script>
+
+</script>
+<script src="js/scanner.js"></script>
+</body>
+
+</html>

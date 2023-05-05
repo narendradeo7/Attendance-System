@@ -1,0 +1,364 @@
+
+
+/* root color so that we can reuse it  */
+
+:root{
+    --main-bg:rgb(199 199 199);;
+    --main-color:rgb(255, 21, 0);
+    --main-cement:rgb(165, 163, 163);
+
+ }
+
+
+ body {
+	background-color: #fff;
+	/* font-family: "poppins", sans-serif; */
+	overflow: visible;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+}
+
+ /* to make page responsive and 1 rem equal to 10 px  */
+
+ .nav_head{
+    font-size:62.5%;
+ }
+.row{
+   margin: 0;
+}
+
+
+
+    /* style of navbar  */
+
+    .nav_head{
+        background-color: var(--main-cement);
+  
+  
+        /* fixing navbar to top when it reaches o px from top  */
+        position: sticky;
+        top: -1px;
+        z-index: 700;
+        
+      }
+      /* background fo nav  */
+      .navbar{
+         color: rgb(255, 255, 255);
+         background-color: var(--main-cement);
+         text-shadow: 0px 2px 5px black;
+         
+      }
+      
+      /* anchor tags of nav  */
+  
+      .navbar a{
+        color: white;
+        font-size: 1.4rem;
+        
+      }
+      .navbar a:hover{
+     color: var(--main-color) !important;
+     text-shadow: 1px 1px 1px black;
+     font-weight: 600;
+     }
+     /* targeting active navbar item  */
+  
+     .navbar a.active {
+        color: var(--main-color)!important;
+        text-shadow: 2px 0px 1px black;
+    }
+  
+  
+     .nav-item{
+        /* box-shadow: inset 0.1em 0.1em 0.7em #282727; */
+     }
+      .nav-brick{
+        width: 2.5em;
+        height: 2.5em;
+        background-image: url('https://www.svgrepo.com/show/147781/brick.svg');
+      }
+  
+      /* giving spaces between li of nav element 
+       */
+      .navbar li {
+        margin-left:2rem;
+       }
+  
+       /* style of logo  */
+
+.logoimg{
+    width: 41px;
+    margin-right: 5px;
+ }
+ .logoimg:hover{
+    width: 80px;
+    filter: drop-shadow(7px 4px 5px var(--main-color));  
+ }
+
+
+ /* styling for the form part 
+ 
+ */
+
+
+ 
+ .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+ 
+
+.form-signin {
+ 
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.middle{
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+/* positioning of the formsec  */
+
+.formsec{
+
+    position: relative;
+    top: 5vh;
+}
+
+
+/* styling of genderdiv  */
+
+.gendiv{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    justify-content: space-evenly;
+  }
+  
+  label {
+    margin-right: 15px;
+    line-height: 32px;
+  }
+  
+  input {
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+    text-align: center !important;
+  }
+  
+  input:checked {
+    border: 6px solid black;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center !important;
+  }
+  
+  :-moz-placeholder {
+    text-align: center !important;
+  }
+  
+  
+  legend{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+  }
+
+
+  .form-signin{
+max-width: 350px !important;
+
+  }
+
+  .form-floating>label {
+
+    left:36%
+  }
+.doblbl{
+    left:25% !important 
+}
+
+
+
+
+
+/* success page  */
+  
+/* person icon  */
+
+
+.material-symbols-rounded {
+
+    top: 5px;
+    position: relative;
+  font-variation-settings:
+  'FILL' 5,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
+
+/* tick icon */
+.tickicn{
+    color: rgb(3, 214, 3);
+    /* width: 9px; */
+    top: -25px;
+    font-size: 61px !important;
+}
+
+/* qr icon */
+#qrcode{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* login icon  */
+
+.loginbtn{
+    text-decoration: none;
+    font-size: 34px;
+    font-family: 'Material Symbols Rounded';
+    font-weight: 900;
+    position: relative;
+    bottom: 0px;
+    color:var(--main-cement);
+
+}
+
+.loginbtn:hover{
+    color: #31ed31;  
+}
+.logbtn{
+    margin-top: 10px;
+}
+
+
+
+
+.succespopup{
+    position: relative;
+    left: 29%;
+    top: 20vh;
+    max-width: 45%;
+    box-shadow: 0em 3em 8em #c5c5c5;
+    
+    border-radius: 6%;
+}
+.succespopup:hover{
+    box-shadow: 0em 3em 8em #737373;  
+}
+ 
+.sucmsg{
+    
+    padding: 1px 9px 21px;
+    position: relative;
+    top: -29px;
+    font-family: 'Raleway';
+    line-height: 34px;
+}
+
+.sucmsg span {
+    font-weight: 700;
+}
+
+
+
+
+
+/* styling of the alertmsg for the login page  */
+
+.alertmsg{
+  display: none;
+  font-family: 'Raleway';
+  line-height: 34px;
+  color: red;
+}
+
+
+
+
+/* mediaquery for small devices  */
+
+@media (max-width:400px) {
+    
+    .doblbl{
+        font-size: smaller; 
+    }
+    
+    .form-floating>label {
+
+        left:31%
+      }
+
+      .sucmsg{
+        font-size: 1.1rem;
+        line-height: 25px;
+      }
+
+}
+
+
+

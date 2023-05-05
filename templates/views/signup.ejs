@@ -1,0 +1,103 @@
+<!-- including header using ejs  -->
+
+
+<%- include("partials/header"); -%>
+
+<!-- including navbar using ejs  -->
+
+<%- include("partials/nav"); -%>
+
+
+<!-- form part starts  -->
+
+
+<div class="container-fluid formsec">
+<div class="row">
+
+<div class="col-md-10 col-12 mx-auto">
+
+    <main class="form-signin w-100 m-auto">
+        <form action="/" method="post">
+          <img class="mb-4" src="images/MAIT_LOGO_.png" alt="" width="72" height="57">
+          <h1 class="h3 mb-3 fw-normal">Signup to CDC MAIT </h1>
+      
+          <div class="form-floating">
+            <input type="text" name="name"class="form-control top" id="floatingInput" placeholder="First Name" autofocus required>
+            <label for="floatingInput">Full Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="email"name="email" class="form-control middle" id="floatingemail" placeholder="Email address"required>
+            <label for="floatingemail">E-mail</label>
+          </div>
+
+          <div class="form-floating">
+            <input type="tel"name="mob" class="form-control middle" id="floatingmob" placeholder="Mobile No."required>
+            <label for="floatingemail">Mobile No.</label>
+          </div>
+          <div class="form-floating">
+            <input type="text"name="enroll" class="form-control middle" id="floatingenroll" placeholder="Enrollment No."required>
+            <label for="floatingemail">Enrollment No.</label>
+          </div>
+          <div class="form-floating">
+            <input type="password"name="password" class="form-control middle" id="floatingPassword" placeholder="Password"required>
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="form-floating">
+            <input type="date"name="dob" class="form-control middle" id="floatingdob" placeholder="(DD/MM/YYYY)"required  value="2022-10-25">
+            <label for="floatingdob" class="doblbl">DOB (DD/MM/YYYY)</label>
+          </div>
+
+          <fieldset>
+            <legend>Gender:</legend>
+            <div class="gendiv bottom">
+              <input
+                type="radio"
+                id="genderChoice1"
+                name="gender"
+                value="male"
+                checked class=""  />
+              <label for="genderChoice1">Male</label>
+        
+              <input type="radio" id="genderChoice2" name="gender" value="female" />
+              <label for="genderChoice2">female</label>
+        
+              <input type="radio" id="genderChoice3" name="gender" value="prefer not to say" />
+              <label for="genderChoice3">Prefer Not to Say</label>
+            </div>
+            <div>
+              
+            </div>
+          </fieldset>
+          
+      
+          
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+          <p class="mt-3 mb-3 text-muted">&copy; real2reel_art</p>
+        </form>
+      </main>
+
+
+
+
+
+</div></div>
+
+
+
+
+
+
+</div>
+
+
+
+
+ 
+ 
+
+
+
+
+
+</body>
+</html>

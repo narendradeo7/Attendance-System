@@ -1,0 +1,87 @@
+<!-- including header using ejs  -->
+
+
+<%- include("partials/header"); -%>
+
+ <!-- navbar starts  -->
+
+
+
+ <div class="container-fluid nav_head">
+
+    <div class="row">
+ 
+     <!-- we are making col to align content having a col space from left and right  -->
+     <div class="col-md-10 col-12 mx-auto">
+ 
+          <!-- navbar from bootstrap that is responsive to the viewport -->
+       <nav class="navbar navbar-expand-lg ">
+ 
+         <a class="navbar-brand" href="/" style=" font-family: 'Raleway';"> <img src="images/whitelogo.png" alt="logo" class="logoimg"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon nav-brick"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <!-- ms-auto class for margin of listing to the right  -->
+           <ul class="navbar-nav ms-auto">
+            
+             <li class="nav-item">
+              <a class="nav-link" href="#"><span class="material-symbols-rounded">
+                person
+                </span> <%= uName%> </a>
+              
+             </li>
+            
+             
+           </ul>
+         </div>
+ 
+       </nav>
+ 
+ 
+     </div>
+ 
+ 
+    </div>
+ </div>
+ 
+ <!-- navbar ends  -->
+
+<!-- success message  -->
+
+
+ 
+
+      <div class="succespopup text-center">
+
+<div class="sucimg"><span class="material-symbols-rounded tickicn">
+  verified_user
+  </span>
+
+</div>
+
+
+  <!-- <h3 class="sucmsg">  Great <br> <span><%= uName %> </span> <br> You have been logged in Successfully </h3> -->
+  <h1><%=userenroll%></h1>
+  <div id="qrcode"></div>
+
+<a href="/login" class="loginbtn">login </a>
+
+      </div>
+
+
+<!-- script for qrcode js  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: '<%=userenroll %>',
+        width: 160,
+        height: 160,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+    </script>
+
+    </body>
+    </html>

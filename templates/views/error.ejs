@@ -1,0 +1,31 @@
+<!-- including header using ejs  -->
+
+
+<%- include("partials/header"); -%>
+
+<!-- including navbar using ejs  -->
+
+<%- include("partials/nav"); -%>
+
+
+<!-- message popup starts  -->
+
+<div class="succespopup text-center">
+
+    <div class="sucimg"><span class="material-symbols-rounded tickicn">
+      warning
+      </span>
+    
+    </div>
+    
+    
+      <h3 class="sucmsg"> <%= alertMsg %> </h3>
+    
+    <a href="/login" class="loginbtn" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"> Try Again !</a>
+    
+          </div>
+
+
+          
+        </body>
+        </html>
